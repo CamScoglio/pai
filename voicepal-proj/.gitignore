@@ -1,0 +1,1 @@
+echo "src/config/config.js" >> .gitignore
