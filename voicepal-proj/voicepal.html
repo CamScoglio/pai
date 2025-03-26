@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoicePal - AI Journaler Assistant</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/detail-view.css">
+</head>
+<body>
+    <h1>VoicePal - AI Journaler Assistant</h1>
+    
+    <div class="controls">
+        <button id="toggleRecording">Start Recording</button>
+        <div id="status">Ready to record</div>
+    </div>
+    
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="recording-text">Recording</div>
+    </div>
+    
+    <div id="transcript">Transcript: </div>
+    
+    <h2>Transcript History</h2>
+    <div id="transcript-history">
+        <!-- Transcript cards will be added here -->
+    </div>
+    
+    <div id="detail-view-container" class="hidden">
+        <div class="detail-view-header">
+            <button id="back-to-home-button">← Back to All Journals</button>
+            <h2 id="detail-title">Entry Title</h2>
+            <div id="detail-timestamp">Timestamp</div>
+        </div>
+        
+        <div class="detail-content">
+            <div id="detail-description" class="description-box"></div>
+            
+            <div class="conversation-container">
+                <div id="conversation-messages"></div>
+                
+                <div class="follow-up-container" id="follow-up-section">
+                    <h3>Reflection Questions</h3>
+                    <div id="follow-up-questions"></div>
+                </div>
+            </div>
+            
+            <div class="recording-controls">
+                <div id="detail-transcript-preview">Transcript: </div>
+                
+                <div class="detail-recording-indicator hidden">
+                    <div class="loader"></div>
+                    <div class="recording-text">Recording...</div>
+                </div>
+                
+                <div class="detail-buttons">
+                    <button id="detail-record-button">Record Response</button>
+                    <button id="detail-stop-button" class="hidden">Stop Recording</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <script src="src/js/main.js" type="module"></script>
+</body>
+</html>
+
+
